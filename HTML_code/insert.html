@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Φόρμα</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+
+<body>
+  <section class="header">
+    <h1> Επιλογή Δεδομένων </h1>
+/* work_id ,title  ,cost ,commence_date
+	,end_date ,summary text, program_name
+	,organization_name ,accountable_researcher_ID ,executive_ID*/
+
+    <form action="/sendData" method="GET">
+      <h1> Όνομα έργου  Έργου </h1>
+      <input type="text" id="txtNum2" name="num2" min="0" step="1">
+      <label for="txtDate">Ημερομηνία Έναρξης Έργου :</label>
+      <input type="date" id="txtDate" name="date"  max="2022-06-06" value="2022-06-06" required>
+      <label for="txtDate">Ημερομηνία Λήξης Έργου :</label>
+      <input type="date" id="txtDate" name="date"  max="2028-06-06" value="2022-06-06" required>
+      <br>
+      <h1> Κόστος Έργου </h1>
+      <input type="number" id="txtNum2" name="num2" min="0" step="1">
+      <h1> Στοιχεία στελέχους που χειρίζεται Χρηματοδότηση </h1>
+
+      <label for="txtName">Όνομα:</label>
+      <input type="text" id="txtName" name="name" minlength="3" maxlength="30" required>
+      <br>
+      <label for="txtSurname">Επώνυμο:</label>
+      <input type="text" id="txtSurname" name="name" minlength="3" maxlength="30" required>
+
+      <br>
+      <br />
+      <input type="submit" value="Αποστολή">
+      <input type="reset" value="Καθαρισμός">
+
+    </form>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Φόρμα</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+
+<body>
+  <section class="header">
+    <h1> Επιλογή Δεδομένων </h1>
+    <h1> Ημερομηνία Έναρξης Έργου </h1>
+
+    <form action="/sendData" method="GET">
+      <label for="txtDate">Ημερομηνία:</label>
+      <input type="date" id="txtDate" name="date" max="2022-06-06" value="2022-06-06" required>
+      <br>
+      <h1> Δίαρκεια Έργου </h1>
+      <label for="txtNum2">Διάρκεια σε Μέρες </label>
+      <br />
+      <input type="number" id="txtNum2" name="num2" min="0" step="1">
+      <h1> Στοιχεία στελέχους που χειρίζεται Χρηματοδότηση </h1>
+
+      <label for="txtName">Όνομα:</label>
+      <input type="text" id="txtName" name="name" minlength="3" maxlength="30" required>
+      <br>
+      <label for="txtSurname">Επώνυμο:</label>
+      <input type="text" id="txtSurname" name="name" minlength="3" maxlength="30" required>
+
+      <br>
+      <br />
+      <input type="submit" value="Αποστολή">
+      <input type="reset" value="Καθαρισμός">
+
+    </form>
+  </section>
+</body>
+
+</html>
